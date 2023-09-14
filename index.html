@@ -1,51 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portal Berita</title>
+<title>Portal Berita</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-    <header>
-        <h1>Portal Berita</h1>
-    </header>
-    <nav>
+<div id="header">
+  <h1><a href="#">Portal Berita</a></h1>
+</div>
+<div id="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+<div id="page">
+  <div id="content">
+    <div class="post">
+      <div class="title">
+        <h2><a href="#">Penemuan Terbaru dalam Dunia Kesehatan</a></h2>
+        <p><small>Jakarta, 14 September 2023</small></p>
+      </div>
+      <div class="entry">
+        <p>Dunia kesehatan telah menyaksikan terobosan baru yang menarik dalam penelitian terkait penyakit Alzheimer. Para peneliti di Institut Kesehatan Global melaporkan bahwa mereka telah mengidentifikasi molekul kunci yang dapat mempengaruhi perkembangan penyakit ini.</p>
+      </div>
+      <p class="links"> <a href="#" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="#" class="comments">No Comments</a> </p>
+    </div>
+    <div class="post">
+      <div class="title">
+        <h2><a href="#">Perkembangan Terbaru Dalam Eksplorasi Antariksa</a></h2>
+        <p><small>Houston, 18 September 2023 </small></p>
+      </div>
+      <div class="entry">
+        <p>Eksplorasi luar angkasa terus berkembang dengan pesat, dan agensi antariksa di seluruh dunia terus membuat terobosan luar biasa. NASA baru-baru ini mengumumkan pencapaian besar dalam eksplorasi Mars.</p>
+      </div>
+      <p class="links"> <a href="#" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="#" class="comments">No Comments</a> </p>
+    </div>
+    </div>
+  </div>
+  <div id="sidebar">
+    <div id="search">
+      <h2>Search</h2>
+      <form id="searchform" method="get" action="#">
+        <fieldset>
+        <input type="text" name="s" id="s" size="15" value="" />
+        <input type="submit" id="x" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+    <ul>
+      <li id="categories">
+        <h2>Categories</h2>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="#">Kesehatan</a></li>
+          <li><a href="#">Olahraga</a></li>
+          <li><a href="#">Antariksa</a></li>
+          <li><a href="#">Politik</a></li>
+          <li><a href="#">Dunia</a></li>
         </ul>
-    </nav>
-    <section class="main-content">
-        <div class="article">
-            <div style="margin-bottom: 20px; border: 1px solid black; padding: 10px;">
-            <h2>Penemuan Terbaru dalam Dunia Kesehatan</h2>
-            <p>Dunia kesehatan telah menyaksikan terobosan baru yang menarik dalam penelitian terkait penyakit Alzheimer. </p>
-            <a href="#">Baca Selengkapnya</a>
-            </div>
-            <div style="border: 1px solid black; padding: 10px;"> 
-            <h2>Perkembangan Terbaru Dalam Eksplorasi Antariksa</h2>
-            <p>Eksplorasi luar angkasa terus berkembang dengan pesat, dan agensi antariksa di seluruh dunia terus membuat terobosan luar biasa.</p>
-            <a href="#">Baca Selengkapnya</a>
-            </div>
+      </li>
+      <li id="calendar">
+        <h2>Calendar</h2>
+        <div id="calendar_wrap">
+          <table id="wp-calendar" summary="Calendar">
+            <caption>
+            September 2023
+            </caption>
+            <thead>
+              <tr>
+                <th abbr="Monday" scope="col" title="Monday">M</th>
+                <th abbr="Tuesday" scope="col" title="Tuesday">T</th>
+                <th abbr="Wednesday" scope="col" title="Wednesday">W</th>
+                <th abbr="Thursday" scope="col" title="Thursday">T</th>
+                <th abbr="Friday" scope="col" title="Friday">F</th>
+                <th abbr="Saturday" scope="col" title="Saturday">S</th>
+                <th abbr="Sunday" scope="col" title="Sunday">S</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td abbr="August" colspan="3" id="prev"><a href="#">&laquo; Aug</a></td>
+                <td class="pad">&nbsp;</td>
+                <td abbr="October" colspan="3" id="next" class="pad"><a href="#">Oct &raquo;</a></td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td colspan="4" class="pad">&nbsp;</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td id="today">14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td class="pad" colspan="1">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div>
-        <aside class="sidebar">
-            <h2>Kategori</h2>
-            <ul>
-                <li><a href="#">Berita Terkini</a></li>
-                <li><a href="#">Olahraga</a></li>
-                <li><a href="#">Kesehatan dan Sains</a></li>
-                
-            </ul>
-        </aside>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 Portal Berita</p>
-    </footer>
+      </li>
+    </ul>
+  </div>
+  <div id="extra" style="clear: both;">&nbsp;</div>
+</div>
+<div id="footer">
+  <p class="legal"> &copy;2023 All Rights Reserved.
+    &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+    Design by <a href="#">Katarina Inezita Prambudi</a> </p>
+</div>
 </body>
 </html>
