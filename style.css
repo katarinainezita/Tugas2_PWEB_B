@@ -1,0 +1,91 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the main content section */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.article .sidebar{
+    flex: 0 0 70%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.article h2 {
+    font-size: 1.5em;
+}
+
+.article p {
+    margin-top: 10px;
+}
+
+.article a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Style the sidebar */
+.sidebar {
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
